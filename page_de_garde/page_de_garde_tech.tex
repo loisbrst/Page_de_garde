@@ -1,0 +1,21 @@
+\makeatletter
+
+\def\@UV{UV}
+\newcommand{\UV}[1]{
+	\def\@UV{#1}
+}
+\def\@nomUV{Nom UV}
+\newcommand{\nomUV}[1]{
+	\def\@nomUV{#1}
+}
+\def\@contenu{type de fichier}
+\newcommand{\contenu}[1]{
+	\def\@contenu{#1}
+}
+\newcommand{\pagedegarde}{
+	\begin{titlepage}
+		\large{\@UV}\\
+		\vfill
+		\large{\@nomUV}
+	\end{titlepage}
+\makeatother
