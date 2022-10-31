@@ -1,22 +1,23 @@
-\documentclass[a4paper]{book}
+\documentclass[a4paper]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{graphicx}
 \usepackage{color}
-\usepackage[top=2.5cm, bottom=2cm, 
-			left=3cm, right=2.5cm,
-			headheight=15pt]{geometry}
-
+\usepackage{lipsum}
 \input{page_de_garde_tech.tex}
 \pagestyle{plain}
 \UV{IF40}
 \nomUV{Informatique Industrielle}
 \contenu{Compte-rendu de TP \no 2 et 3}
-\author{Loïs Boursaut \& XX XX}
+\author{Loïs \bsc{Boursaut} \& XX XX}
 \semestre{A22}
 \AU{2022-2023}
 \begin{document}
 	\pagedegarde
-	\chapter[TP \no 2]{TP \no 2}
+	\newpage
+	\begin{abstract}
+		\lipsum[1-2]
+	\end{abstract}
+	\chapter*{TP \no 2}
 \end{document}
