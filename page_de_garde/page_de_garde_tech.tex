@@ -16,17 +16,25 @@
 \newcommand{\semestre}[1]{
 	\def\@semestre{#1}
 }
+\def\@AU{Année universitaire}
+\newcommand{\AU}[1]{
+	\def\@AU{#1}
+}
 \newcommand{\pagedegarde}{
 	\begin{titlepage}
+		\begin{center}
+			\small{Année universitaire \@AU}
+		\end{center}
+		\vfill
 		\begin{flushright}
-		\huge{\emph{\color{blue}\@UV}}\\
-		\huge{\emph{\@nomUV}}
+			\Huge{\emph{\color{blue}\@UV}}\\
+			\Huge{\emph{\@nomUV}}
 		\end{flushright}
 		\vspace{2cm}
 		\large{\@contenu}\\
 		\large{\textbf{\@author}}\\
 		Semestre \@semestre
-		\vspace{2cm}\\
+		\vfill
 		\begin{center}
 			\includegraphics[scale=1]{Utbm_logo.pdf}
 		\end{center}
