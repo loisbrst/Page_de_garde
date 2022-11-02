@@ -1,3 +1,6 @@
+\usepackage{fancybox}
+\setlength{\fboxsep}{10pt}
+
 \makeatletter
 
 \def\@UV{UV}
@@ -20,6 +23,10 @@
 \newcommand{\AU}[1]{
 	\def\@AU{#1}
 }
+\def\@couleuracc{Couleur d'accentuation}
+\newcommand{\couleuracc}[1]{
+	\def\@couleuracc{#1}
+}
 \newcommand{\pagedegarde}{
 	\begin{titlepage}
 		\begin{center}
@@ -27,7 +34,7 @@
 		\end{center}
 		\vfill
 		\begin{flushright}
-			\Huge{\emph{\color{blue}\@UV}}\\
+			\Huge{\emph{\color{\@couleuracc}\@UV}}\\
 			\Huge{\emph{\@nomUV}}
 		\end{flushright}
 		\vspace{2cm}
@@ -38,6 +45,27 @@
 		\begin{center}
 			\includegraphics[scale=1]{ressource/Utbm_logo.pdf}
 		\end{center}
+	\end{titlepage}
+\makeatother
+}
+
+\newcommand{\pagedegardeboxed}{
+	\begin{titlepage}
+		\centering\small{Année universitaire \@AU}\\
+		\vspace{3cm}
+			\Ovalbox{\begin{minipage}{\textwidth}	
+				\begin{center}
+				\vfill
+				\Huge{\emph{\color{\@couleuracc}\@UV}}\\
+				\Huge{\emph{\@nomUV}}\\
+				\vspace{2cm}
+				\large{\@contenu}\\
+				\large{\textbf{\@author}}\\
+				Semestre \@semestre
+				\end{center}
+			\end{minipage}}
+		\vfill	
+		\centering\includegraphics[scale=1]{ressource/Utbm_logo.pdf}	
 	\end{titlepage}
 \makeatother
 }
