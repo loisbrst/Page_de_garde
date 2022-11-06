@@ -13,8 +13,11 @@ This repository is composed of 2 files, with one just being an example of the us
 First, you'll need 3 package on your system these are : 
 * `fancybox`
 * `graphicx`
-* `color` <br>
-Then, just include the `page_de_garde` file in your project with the command `\input{page_de_garde.tex}` that need to be just after the inclusion of all your package. Then use the command `\pagedegarde`or `\pagdegardeboxed` just after `tex \begin{document}` your document to create the title page. <br>
+* `color`
+</p>
+<p>
+
+Then, just include the `page_de_garde` file in your project with the command `\input{page_de_garde.tex}` that need to be just after the inclusion of all your package. Then use the command `\pagedegarde`or `\pagdegardeboxed` just after `\begin{document}` to create the title page. <br>
 In order to work proprely, you nedd to pass few argument to `page_de_garde` : 
 * `\UV` : UV code 
 * `\nomUV`: name of the UV 
